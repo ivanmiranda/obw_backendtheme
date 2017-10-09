@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2016 Magento. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src="fonts/obw/style.css"/>
+    </head>
+    <referenceContainer name="header">
+        <block class="Magento\Backend\Block\Page\Header" name="logo" before="-">
+            <arguments>
+                <argument name="show_part" xsi:type="string">logo</argument>
+                <argument name="edition" translate="true" xsi:type="string">obw - Apasionados del e-commmerce</argument>
+            </arguments>
+        </block>
+    </referenceContainer>
+    <referenceContainer name="legal">
+        <container name="logo.obw" htmlTag="div" htmlClass="logo-container-brand col-m-4" before="legal.system">
+            <block class="Magento\Framework\View\Element\Template" name="obwlogo" as="obwlogo" template="Magento_Backend::page/obwlogo.phtml" />
+        </container>
+    </referenceContainer>
+    <referenceContainer name="legal.copyright" htmlClass="copyright col-m-4" />
+    <referenceContainer name="legal.system" htmlClass="footer-legal-system col-m-4" after="-"/>
+</page>
