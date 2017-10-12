@@ -1,0 +1,11 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="logo">
+        </referenceBlock>
+        <referenceBlock name="login.content">
+            <container name="logo.footer" htmlTag="div" htmlClass="logo-container-brand col-m-4" before="-">
+                <block class="Magento\Framework\View\Element\Template" name="logobrand" as="logobrand" template="Magento_Backend::page/logofooter.phtml" />
+            </container>
+        </referenceBlock>
+    </body>
+</page>

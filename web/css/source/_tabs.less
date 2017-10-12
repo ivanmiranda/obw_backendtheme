@@ -1,0 +1,64 @@
+// /**
+//  * Copyright © 2016 Magento. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Horizontal tabs
+//  _____________________________________________
+
+//  Are used in dashboard
+
+.tabs-horiz {
+    &:extend(.abs-clearfix all);
+    margin: 0;
+    padding: 0;
+
+    //  Default tab
+    .ui-state-default {
+        background: @colorobw-blue-light;
+        border: .1rem solid @colorobw-blue;
+        float: left;
+        letter-spacing: .0183em; // For tab width fixing depending on normal-semibold font-weight
+        list-style: none;
+        margin-right: .4rem;
+    }
+
+    //  Hovered tab
+    .ui-state-hover {
+        background: @colorobw-blue;
+    }
+
+    //  Active tab
+    .ui-state-active {
+        background: @color-white;
+        border-bottom: 0;
+        font-weight: @font-weight__semibold;
+        letter-spacing: normal;
+        margin-bottom: -.1rem;
+
+        .ui-tabs-anchor {
+            border-bottom: .1rem solid @color-white;
+            border-top: .4rem solid @colorobw-blue;
+            padding-top: 1.1rem;
+        }
+    }
+
+    .ui-tabs-anchor {
+        color: @color-brown-darkie;
+        display: block;
+        padding: 1.5rem 1.8rem 1.3rem;
+        text-decoration: none;
+
+        &:hover { // ToDo UI: should be deleted with old styles
+            color: @color-brown-darkie;
+            text-decoration: none;
+        }
+    }
+}
+
+//  Tabs content
+.ui-tabs-panel {
+    margin-top: -1px;
+    padding: 2rem;
+}
