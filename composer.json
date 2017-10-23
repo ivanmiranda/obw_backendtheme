@@ -2,7 +2,7 @@
     "name": "obw/backendtheme",
     "description": "Objectwave's default admin theme",
     "type": "magento2-theme",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "license": [
         "CC-BY-NC-ND"
     ],
