@@ -23,5 +23,5 @@
         </container>
     </referenceContainer>
     <referenceContainer name="legal.copyright" htmlClass="copyright col-m-4" />
-    <referenceContainer name="legal.system" htmlClass="footer-legal-system col-m-4" after="-"/>
+    <referenceContainer name="legal.system" htmlClass="footer-legal-system col-m-4" />
 </page>
